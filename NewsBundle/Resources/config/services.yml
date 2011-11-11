@@ -1,0 +1,7 @@
+parameters:
+#    alfa_dev_debate_news.example.class: AlfaDev\Debate\NewsBundle\Example
+
+services:
+#    alfa_dev_debate_news.example:
+#        class: %alfa_dev_debate_news.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

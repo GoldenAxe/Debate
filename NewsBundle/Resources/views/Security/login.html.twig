@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Debate24h - Identifíquese</title>
+</head>
+<body>
+    <div style="background-color: #75AADB; width: 100%; height:120px; float:right;">
+        <div style="height: 100%; font-family: helvetica; color: White; font-size:xx-large; float:left">
+            Debate24h.org
+        </div>
+        <div align="right" style="float:right;font-family: helvetica;font-size:small;color:White; height:100%; padding-right:10px; padding-top:5px; ">
+            <form action="{{ path('_security_check') }}" method="POST">
+                <label for="username">Dirección de correo electrónico</label>
+                <input type="text" name="_username" id="username" value="{{ last_username }}" tabindex="1" />
+                <label for="password">Contraseña</label>
+                <input type="password" name="_password" id="password" tabindex="2" />
+                <input value="Entrar" tabindex="4" type="submit" name="login" />
+            </form>
+			<div align="right" style="float:right; font-family: helvetica;font-size:x-small;color:White; padding-right:10px;padding-top:5px;">
+			   {% if error %}
+                  <div class="error">{{ error.message }}</div>
+               {% endif %}
+			</div>
+        </div>
+    </div>
+</body>
+</html>

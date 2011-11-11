@@ -1,0 +1,18 @@
+AlfaDevDebateNewsBundle_homepage:
+    pattern:  /Debate24h
+    defaults: { _controller: AlfaDevDebateNewsBundle:Default:index }
+
+_security_login:
+    pattern:  /login
+    defaults: { _controller: AlfaDevDebateNewsBundle:Security:login }
+
+_security_check:
+    pattern:  /login_check
+
+_security_logout:
+    pattern:  /logout
+
+admin_home:
+    pattern:  /admin/
+    defaults: { _controller: AlfaDevDebateNewsBundle:Admin:index }
+

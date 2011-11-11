@@ -1,0 +1,3 @@
+AlfaDevDebateLoginBundle_homepage:
+    pattern:  /Debate24h/DoLogin
+    defaults: { _controller: AlfaDevDebateLoginBundle:Default:index }
